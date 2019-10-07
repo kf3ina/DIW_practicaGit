@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <title>Contacto - CodeExMachina</title>
+</head>
+<body>
+    <header>
+        <a href="../../index.html"><img src="../images/logo.svg" alt="CodeExMachina logo" height="200" width="200"></a>
+        <h1>CodeExMachina</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Inicio</a></li>
+            <li><a href="./servicios.html">Servicios</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <form>
+        <label for="txtNombre">Nombre</label>
+        <input type="text" id="txtNombre" placeholder="Nombre" maxlength="30" pattern="[A-Za-z0-9 ÁáÉéÍíÓóÚúÑñ-]{1,30}" title="Utilice sólo letras y números" autofocus required>
+        <label for="txtEmail">Email</label>
+        <input type="email" id="txtEmail" placeholder="Email" required>
+        <label for="numEdad">Edad</label>
+        <input type="number" id="numEdad" placeholder="Edad" min="18" max="99" title="Edad entre 18 y 99 años" required>
+        <label for="txtTelefono">Teléfono</label>
+        <input type="text" id="txtTelefono" placeholder="Teléfono" required>
+        <label for="txtConsulta">Campo de consulta</label>
+        <textarea id="txtConsulta" placeholder="Escriba aquí su consulta" required></textarea>
+        <label for="chkPoliticaPrivacidad">Acepto la <a href="#">política de privacidad y cookies</a></label>
+        <input type="checkbox" id="chkPoliticaPrivacidad" required>
+        <br>
+        <input type="button" value="Enviar">
+    </form>
+
+    <p>Puedes contactar con nosotros durante nuestros horarios de atención (L-V 09:00 - 14:00h y 17:00 - 20:00h):</p>
+    <ul>
+        <li><a href="https://wa.me/34680799772"><span class="fab fa-whatsapp"></span> WhatsApp</a></li>
+        <li><a href="tel:34680799772">&#9742; Llámanos</a></li>
+    </ul>
+    <p>O acércate a conocernos:</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1564.6087189642114!2d-0.4895053418992948!3d38.34394909857465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd62364cd022a467%3A0x363f89d32951c333!2sPlaza%20Calvo%20Sotelo%2C%2013%2C%2003001%20Alicante%20(Alacant)%2C%20Alicante!5e0!3m2!1ses!2ses!4v1570214875464!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
+
+    <footer>
+        <ul>
+            <li><a href="https://www.facebook.com"><span class="fab fa-facebook-f"></span></a></li>
+            <li><a href="https://twitter.com"><span class="fab fa-twitter"></span></a></li>
+            <li><a href="https://instagram.com"><span class="fab fa-instagram"></span></a></li>
+            <li><a href="https://linkedin.com"><span class="fab fa-linkedin-in"></span></a></li>
+        </ul>
+
+        <small>
+                © CodeExMachina 2019
+                <br>
+                <a href="">Política de privacidad y cookies</a>
+            </small>
+    </footer>
+</body>
+</html>
