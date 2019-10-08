@@ -1,0 +1,3 @@
+User-agent: *
+#como la página está en pruebas por ahora no queremos posicionar nada.
+Disallow: /
