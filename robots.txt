@@ -1,3 +1,7 @@
 User-agent: *
-#como la página está en pruebas por ahora no queremos posicionar nada.
+#como la pï¿½gina estï¿½ en pruebas por ahora no queremos posicionar nada.
 Disallow: /
+
+#habilitamos el bot de twitter para probar las twitter cards.
+User-agent: Twitterbot
+Disallow:
