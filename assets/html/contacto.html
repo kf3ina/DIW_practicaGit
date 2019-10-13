@@ -2,10 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Primer boceto del proyecto CodeExMachina.com. Página en pruebas">
-    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+
+    <meta name="twitter:card" content="summary_large_image"><!--etiquetas para uso de las twittercards-->
+    <meta name="twitter:site" content="@code_ex_machina">
+    <meta name="twitter:title" content="codeExMachina">
+    <meta name="twitter:description" content="Primer boceto del proyecto codeExMachina.com. Página en pruebas">
+    <meta name="twitter:image" content="https://kf3ina.github.io/DIW_practicaGit/assets/images/articulo1Lorem-750.jpg">
+
+    <meta property="og:url" content="https://kf3ina.github.io/DIW_practicaGit/"><!--etiquetas open graph para redes sociales (Facebook, etc)-->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="codeExMachina.com" />
+    <meta property="og:description" content="Primer boceto del proyecto codeExMachina.com. Página en pruebas" />
+    <meta property="og:image" content="https://kf3ina.github.io/DIW_practicaGit/assets/images/articulo1Lorem-750.jpg" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <title>Contacto - CodeExMachina</title>
 </head>
@@ -34,14 +47,14 @@
         <input type="text" id="txtTelefono" placeholder="Teléfono" required>
         <label for="txtConsulta">Campo de consulta</label>
         <textarea id="txtConsulta" placeholder="Escriba aquí su consulta" required></textarea>
-        <label for="chkPoliticaPrivacidad">Acepto la <a href="#">política de privacidad y cookies</a></label>
+        <label for="chkPoliticaPrivacidad"><b>Acepto la <a href="#">política de privacidad y cookies</a></b></label>
         <input type="checkbox" id="chkPoliticaPrivacidad" required>
         <br>
         <input type="button" value="Enviar">
     </form>
 
     <address>
-        <p>Puedes contactar con nosotros durante nuestros horarios de atención (L-V 09:00 - 14:00h y 17:00 - 20:00h):</p>
+        <p>Puedes contactar con nosotros durante nuestros horarios de atención (L-V <time>09:00 - 14:00h</time> y <time>17:00 - 20:00h</time>):</p>
         <ul>
             <li><a href="https://wa.me/+34666666666"><span class="fab fa-whatsapp"></span> WhatsApp</a></li>
             <li><a href="tel:+34666666666">&#9742; Llámanos</a></li>
