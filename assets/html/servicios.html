@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Primer boceto del proyecto CodeExMachina.com. Página en pruebas">
 
     <meta name="twitter:card" content="summary_large_image"><!--etiquetas para uso de las twittercards-->
@@ -18,8 +17,9 @@
     <meta property="og:description" content="Primer boceto del proyecto codeExMachina.com. Página en pruebas" />
     <meta property="og:image" content="https://kf3ina.github.io/DIW_practicaGit/assets/images/articulo1Lorem-750.jpg" />
 
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/fonts.css">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
@@ -27,27 +27,28 @@
 </head>
 <body>
     <header>
-        <a href="../../index.html"><img src="../images/logo.svg" alt="CodeExMachina logo" height="200" width="200"></a>
-        <h1>CodeExMachina</h1>
+        <div class="topHeader">
+            <a href="../../index.html"><img src="../images/logo.svg" alt="CodeExMachina logo" height="44" width="44"></a>
+            <h1>CodeExMachina</h1>
+        </div>
+        <nav>
+                <ul>
+                    <li><a href="../../index.html">Inicio</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./servicios.html">Servicios</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="../../index.html">Inicio</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./servicios.html">Servicios</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-
+    <div style="clear:both"></div>
     <table>
-        <caption>Servicios que ofrecemos</caption>
+        <caption><h2>Servicios que ofrecemos</h2></caption>
         <tr>
-            <th>Nombre servicio</th>
-            <th>Descripción</th>
-            <th>Plazo realización</th>
-            <th>Precio unitario</th>
-            <th>Promoción</th>
+            <th><h3>Nombre servicio</h3></th>
+            <th><h3>Descripción</h3></th>
+            <th><h3>Plazo realización</h3></th>
+            <th><h3>Precio unitario</h3></th>
+            <th><h3>Promoción</h3></th>
         </tr>
         <tr>
             <td>Servicio 1</td>
