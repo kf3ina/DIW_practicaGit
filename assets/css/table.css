@@ -1,7 +1,7 @@
 table {
     caption-side: bottom;
     table-layout: auto;
-    width: 100%;
+    max-width: 1500px;
     border-collapse: collapse;
     margin: 10%;
     border: 1px solid #F2913D;

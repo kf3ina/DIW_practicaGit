@@ -90,6 +90,14 @@ main {
   overflow: hidden;
 }
 
+.parallax {
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .carrusel {
   display: flex;
   flex-wrap: wrap;
@@ -105,6 +113,20 @@ main {
 
 .entry img {
   margin-bottom: 20px;
+}
+
+section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+article {
+  padding: 20px 0;
+}
+
+section img,video {
+  padding: 20px;
+  margin: 0 auto;
 }
 
 footer {
@@ -124,17 +146,32 @@ footer a{
 footer ul{
   list-style-type: none;
   overflow: hidden;
-  text-align: center;
   font-size: 1.75em;
 }
 
+.footer {
+  margin: 0 auto;
+}
+
 footer li{
-  float: left;
-  margin: 0 10px;
+  display: inline;
+  border: 1px solid black;
 }
 
 footer li a{
-  display: block;
   text-decoration: none;
   height: 44px;
+  width: 44px;
+}
+
+.fa-facebook-f:hover{
+  color: #1da1f2;
+}
+.fa-twitter:hover{
+  color: #1da1f2;
+}
+
+.imagen {
+  margin: 0 auto;
+  width: 300px;
 }
