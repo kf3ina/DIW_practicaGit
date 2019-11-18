@@ -32,7 +32,7 @@ em {
   font-weight: 600;
 }
 
-a {
+main a {
   text-decoration: none;
   border-bottom: 1px #0597F2 solid;
   padding-bottom: 1px;
@@ -129,6 +129,20 @@ section img,video {
   margin: 0 auto;
 }
 
+.whatsapp{
+	position:fixed;
+	width:50px;
+	height:50px;
+	bottom:90px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:40px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+}
+
 footer {
   background-color: #04ADBF;
   text-align: center;
@@ -169,6 +183,10 @@ footer li a{
 }
 .fa-twitter:hover{
   color: #1da1f2;
+}
+
+.fa-whatsapp{
+  margin-top:10px;
 }
 
 .imagen {
