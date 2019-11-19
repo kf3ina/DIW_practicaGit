@@ -169,20 +169,29 @@ footer ul{
 
 footer li{
   display: inline;
-  border: 1px solid black;
 }
 
 footer li a{
   text-decoration: none;
+  color: white;
   height: 44px;
   width: 44px;
+  transition: color 2s ease-in-out;
 }
 
 .fa-facebook-f:hover{
-  color: #1da1f2;
+  color: #3b5998;
 }
 .fa-twitter:hover{
   color: #1da1f2;
+}
+
+.fa-instagram:hover{
+  color: #c32aa3;
+}
+
+.fa-linkedin-in:hover{
+  color: #007bb5;
 }
 
 .fa-whatsapp{
