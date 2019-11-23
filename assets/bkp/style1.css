@@ -71,13 +71,6 @@ header {
   float: left;
 }
 
-.topHeader a{
-  transition: 1s linear;
-}
-.topHeader a:hover{
-  transform: rotate(360deg);
-}
-
 nav {
   width: 100%;
   height: 44px;
@@ -136,7 +129,6 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: flex-start;
   margin: 0 auto;
   padding: 30px 0px;
 }
@@ -244,9 +236,6 @@ footer li a{
   width: 300px;
 }
 
-/*Actividad 7.1
-img:not()*/
-
 /*MEDIA QUERIES*/
 @media screen and (min-width: 1024px){
   .encabezado{
@@ -290,14 +279,12 @@ img:not()*/
     display: block;
     text-align: center;
   }
+
   nav ul li a{
     color: white;
     
   }
   main{
     margin-top: 50px;
-  }
-  .carrusel{
-    display: inline;
   }
 }

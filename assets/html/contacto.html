@@ -21,24 +21,49 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="./assets/css/print.css" media="print">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        var cero = 0;
+        $(document).ready(function () {
+            $(window).on('scroll', function () {
+                /*script para mostrar/ocultar icono del burger menu*/
+                $('header').toggleClass('ocultar', $(window).scrollTop() > cero);
+                cero = $(window).scrollTop();
+            })
+
+            $('.burgerMenu').click(function () {
+                /*script para mostrar/ocultar el menú de navegación del burger menu*/
+                $('nav').toggleClass('mostrar');
+            })
+        })
+
+
+
+    </script>
+
     <title>Contacto | CodeExMachina</title>
 </head>
 <body>
     <header>
         <div class="topHeader">
-            <a href="../../index.html"><img src="../images/logo.svg" alt="CodeExMachina logo" height="40"
-                    width="40"></a>
-            <h1>CodeExMachina</h1>
+            <div class="encabezado">
+                <a href="../../index.html"><img src="../images/logo.svg" alt="CodeExMachina logo" height="46"
+                        width="46"></a>
+                <h1>CodeExMachina</h1>
+            </div>
+            <div class="burgerMenu"><span class="fa fa-bars"></span></div>
         </div>
         <nav>
             <ul>
                 <li><a href="../../index.html">Inicio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a class="actual" href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
