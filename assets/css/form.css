@@ -4,4 +4,41 @@ table{
     padding: 20px;
 
 }
+address{
+    max-width: 750px;
+    margin: 0 auto;
+}
 /*clean contact form*/
+tr td:first-child{
+    text-align: right;
+    padding-right: 10px;
+    width: 150px;
+}
+
+/*tr td:nth-child(2){
+    width: calc(100% - 150px)
+}*/
+
+tr td input{
+    border: none;
+    width: 300px;
+    border-bottom: 1px solid #F20F79;
+}
+
+tr:nth-child(6) td{
+    text-align: center;
+    padding: 0;
+}
+
+tr:nth-child(7) td{
+    text-align: center;
+}
+
+input[type="button"]{
+    padding: 0;
+    height: 44px;
+    width: 70px;
+    background-color: white;
+    border: 1px solid #F20F79;
+    border-bottom: 5px solid #F20F79;
+}

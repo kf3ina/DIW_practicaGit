@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/form.css">
-    <link rel="stylesheet" href="./assets/css/print.css" media="print">
+    <link rel="stylesheet" href="../css/print.css" media="print">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
@@ -81,31 +81,31 @@
     <form>
         <table>
             <tr>
-                <td><label for="txtNombre">Nombre</label></td>
+                <td><label for="txtNombre">Nombre:</label></td>
                 <td><input type="text" id="txtNombre" placeholder="Nombre" maxlength="30" pattern="[A-Za-z0-9 ÁáÉéÍíÓóÚúÑñ-]{1,30}" title="Utilice sólo letras y números" autofocus required>
                 </td>
             </tr>
             <tr>
-                <td><label for="txtEmail">Email</label></td>
+                <td><label for="txtEmail">Email:</label></td>
                 <td><input type="email" id="txtEmail" placeholder="Email" required></td>
             </tr>
             <tr>
-                <td><label for="numEdad">Edad</label></td>
+                <td><label for="numEdad">Edad:</label></td>
                 <td><input type="number" id="numEdad" placeholder="Edad" min="18" max="99" title="Edad entre 18 y 99 años" required></td>
             </tr>
             <tr>
-                <td><label for="txtTelefono">Teléfono</label></td>
+                <td><label for="txtTelefono">Teléfono:</label></td>
                 <td><input type="text" id="txtTelefono" placeholder="Teléfono" required></td>
             </tr>
             <tr>
-                <td><label for="txtConsulta">Campo de consulta</label></td>
+                <td><label for="txtConsulta">Campo de consulta:</label></td>
                 <td><textarea id="txtConsulta" placeholder="Escriba aquí su consulta" required></textarea></td>
             </tr>
             <tr>
-                <td><input type="checkbox" id="chkPoliticaPrivacidad" required><label for="chkPoliticaPrivacidad"><b>Acepto la <a href="#">política de privacidad y cookies</a></b></label></td>
+                <td colspan="2"><input type="checkbox" id="chkPoliticaPrivacidad" required><label for="chkPoliticaPrivacidad"><b>Acepto la <a href="#">política de privacidad y cookies</a></b></label></td>
             </tr>
             <tr>
-                <td><input type="button" value="Enviar"></td>
+                <td colspan="2"><input type="button" value="Enviar"></td>
             </tr>
         <br>
         
@@ -114,10 +114,7 @@
 
     <address>
         <p>Puedes contactar con nosotros durante nuestros horarios de atención (L-V <time>09:00 - 14:00h</time> y <time>17:00 - 20:00h</time>):</p>
-        <ul>
-            <li><a href="https://wa.me/+34666666666"><span class="fab fa-whatsapp"></span> WhatsApp</a></li>
-            <li><a href="tel:+34666666666">&#9742; Llámanos</a></li>
-        </ul>
+        <p></p><a href="tel:+34666666666">&#9742; Llámanos</a></p>
         <p>O acércate a conocernos:</p>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1564.6087189642114!2d-0.4895053418992948!3d38.34394909857465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd62364cd022a467%3A0x363f89d32951c333!2sPlaza%20Calvo%20Sotelo%2C%2013%2C%2003001%20Alicante%20(Alacant)%2C%20Alicante!5e0!3m2!1ses!2ses!4v1570214875464!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
     </address>
