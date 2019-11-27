@@ -23,11 +23,26 @@ h2 {
   color: #F2913D;
 }
 
+article h2{
+  text-align: center;
+}
+
+form h2{
+  text-align: center;
+}
+
 h3 {
   font-family: "League Spartan", sans-serif;
-  font-size: 1.25e;
+  font-size: 1.25em;
   color: #44AFF2;
+}
+
+.entry h3{
   text-align: center;
+}
+
+article h3{
+  margin: 10px;
 }
 
 em {
@@ -166,6 +181,11 @@ section {
 
 article {
   padding: 20px 0;
+  overflow: auto;
+}
+
+article .centrado{
+  text-align: center;
 }
 
 section img,video {
@@ -249,8 +269,33 @@ footer li a{
   width: 300px;
 }
 
+.pieFoto{
+  text-align: center;
+}
+
 /*Actividad 7.1
 img:not()*/
+img:not([alt]){
+  border: 3px solid red;
+}
+
+a[type="application/pdf"]::after { 
+    content: "";
+    display: inline-block;
+    background: url("../images/icono-pdf.png") no-repeat;
+    width: 16px;
+    height: 16px;
+    margin: 0 0 0 5px;
+}
+
+a[href$=".pdf"]::after { 
+  content: "";
+    display: inline-block;
+    background: url("../images/icono-pdf.png") no-repeat;
+    width: 16px;
+    height: 16px;
+    margin: 0 0 0 5px;
+}
 
 /*MEDIA QUERIES*/
 @media screen and (min-width: 1024px){
