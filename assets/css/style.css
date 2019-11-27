@@ -1,3 +1,4 @@
+/****** clases genéricas ******/
 *{
   margin: 0;
   padding: 0;
@@ -8,7 +9,7 @@
   box-sizing: border-box;
 }
 
-h1 {
+h1{
   font-family: "League Spartan", sans-serif;
   font-size: 2em;
   color: #F20F79;
@@ -17,7 +18,7 @@ h1 {
   margin-left: 10px;
 }
 
-h2 {
+h2{
   font-family: "League Spartan", sans-serif;
   font-size: 1.5em;
   color: #F2913D;
@@ -31,7 +32,7 @@ form h2{
   text-align: center;
 }
 
-h3 {
+h3{
   font-family: "League Spartan", sans-serif;
   font-size: 1.25em;
   color: #44AFF2;
@@ -45,25 +46,49 @@ article h3{
   margin: 10px;
 }
 
-em {
+em{
   color: #F2913D;
   font-weight: 600;
 }
 
-main a {
+main a{
   text-decoration: none;
   border-bottom: 1px #0597F2 solid;
   padding-bottom: 1px;
-  color: #0597F2;
+  transition: color 0.5s step-start;
+}
+.sinBorde{
   border: none;
-  transition: color 1s ease;
 }
 
-a:hover {
+main a:link{
+  color: #0597F2;
+}
+
+main a:hover{
   color: #F20F79;
 }
 
-header {
+main a:visited{
+  color: #999;
+}
+
+main a:active{
+  color: #F2913D;
+}
+
+.imagen{
+  margin: 0 auto;
+  width: 300px;
+}
+
+.pieFoto{
+  text-align: center;
+}
+
+/****** header ******/
+
+header{
   position: fixed;
   top: 0;
   width: 100%;
@@ -76,7 +101,7 @@ header {
   font-size: 32px;
 }
 
-.topHeader {
+.topHeader{
   background-color: rgba(4, 172, 191, 0.95);
   height: 50px;
 }
@@ -86,35 +111,29 @@ header {
   float: left;
 }
 
-.topHeader img {
+.topHeader img{
   margin-top: 2px;
   float: left;
 }
 
-.topHeader a{
-  transition: 1s linear;
-}
-.topHeader a:hover{
-  transform: rotate(360deg);
-}
-
-nav {
+/****** nav menu ******/
+nav{
   width: 100%;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.95);
 }
 
-nav ul {
+nav ul{
   float: left;
   display: flex;
 }
 
-nav li {
+nav li{
   list-style: none;
   text-align: center;
 }
 
-nav li a {
+nav li a{
   display: block;
   text-decoration: none;
   padding: 7px;
@@ -134,7 +153,73 @@ nav li a:hover, nav li a.actual{
   cursor: pointer;
   display: none;
 }
-main {
+
+/****** aside ******/
+aside{
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 2;
+  top: 94px;
+  left: 0;
+  background-color: #04ADBF;
+  overflow-x: hidden;
+  padding-top: 100px;
+  transition: 0.3s;
+}
+
+aside ul{
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+aside ul li{
+  list-style: none;
+  text-align: center;
+}
+
+aside a{
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 1.25em;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+aside ul li a:hover{
+  color:#F20F79;
+}
+
+aside .botonCerrar {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 2.25em;
+  margin-left: 50px;
+}
+
+.flechaAside{
+  position: fixed;
+  top: 50%;
+  left: 0;
+  width: 30px;
+  height: 50px;
+  background-color: #04ADBF;
+  text-decoration: none;
+  font-size: 2.25em;
+  font-weight: bolder;
+  transition: 0.3s;
+}
+
+
+.flechaAside .fa-arrow-right{
+  color: white;
+}
+
+/****** main ******/
+main{
   max-width: 1500px;
   margin: 0 auto;
   margin-top: 94px;
@@ -143,7 +228,7 @@ main {
   margin-bottom: 90px;
 }
 
-.parallax {
+.parallax{
   width: 100%;
   height: 60vh;
   background-attachment: fixed;
@@ -152,7 +237,7 @@ main {
   /*background-size: cover;*/
 }
 
-.carrusel {
+.carrusel{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -161,7 +246,7 @@ main {
   padding: 30px 0px;
 }
 
-.entry {
+.entry{
   max-width: 300px;
   padding: 15px;
 }
@@ -170,16 +255,16 @@ main {
   text-align: justify;
 }
 
-.entry img {
+.entry img{
   margin-bottom: 20px;
 }
 
-section {
+section{
   max-width: 800px;
   margin: 0 auto;
 }
 
-article {
+article{
   padding: 20px 0;
   overflow: auto;
 }
@@ -188,26 +273,28 @@ article .centrado{
   text-align: center;
 }
 
-section img,video {
+section img,video{
   padding: 20px;
   margin: 0 auto;
 }
+
+/****** footer ******/
 
 .whatsapp{
 	position:fixed;
 	width:50px;
 	height:50px;
-	bottom:90px;
+	bottom:95px;
 	right:40px;
 	background-color:#25d366;
 	color:#FFF;
 	border-radius:40px;
 	text-align:center;
-  font-size:30px;
+  font-size:1.875em;
 	box-shadow: 2px 2px 3px #999;
 }
 
-footer {
+footer{
   background-color: #04ADBF;
   text-align: center;
   width: 100%;
@@ -229,7 +316,7 @@ footer ul{
   font-size: 1.75em;
 }
 
-.footer {
+.footer{
   margin: 0 auto;
 }
 
@@ -264,37 +351,29 @@ footer li a{
   margin-top:10px;
 }
 
-.imagen {
-  margin: 0 auto;
-  width: 300px;
-}
+/****** actividades ******/
 
-.pieFoto{
-  text-align: center;
-}
-
-/*Actividad 7.1
-img:not()*/
+/*Actividad 7.1*/
 img:not([alt]){
   border: 3px solid red;
 }
 
-a[type="application/pdf"]::after { 
-    content: "";
-    display: inline-block;
-    background: url("../images/icono-pdf.png") no-repeat;
-    width: 16px;
-    height: 16px;
-    margin: 0 0 0 5px;
+a[type="application/pdf"]::after{ 
+  content: "";
+  display: inline-block;
+  background: url("../images/icono-pdf.png") no-repeat;
+  width: 16px;
+  height: 16px;
+  margin: 0 0 0 5px;
 }
 
-a[href$=".pdf"]::after { 
+a[href$=".pdf"]::after{ 
   content: "";
-    display: inline-block;
-    background: url("../images/icono-pdf.png") no-repeat;
-    width: 16px;
-    height: 16px;
-    margin: 0 0 0 5px;
+  display: inline-block;
+  background: url("../images/icono-pdf.png") no-repeat;
+  width: 16px;
+  height: 16px;
+  margin: 0 0 0 5px;
 }
 
 /*MEDIA QUERIES*/
@@ -315,9 +394,8 @@ a[href$=".pdf"]::after {
   header.ocultar{
   transform: translateY(-100%);
 }
-  body{
-    margin-left: 5px;
-    margin-right: 5px;
+  #flechaAside.ocultar{
+    transform: translateX(-100%);
   }
 }
 @media screen and (max-width: 680px){
@@ -344,6 +422,9 @@ a[href$=".pdf"]::after {
   nav ul li a{
     color: white;
     
+  }
+  aside{
+    top: 50px;
   }
   main{
     margin-top: 50px;

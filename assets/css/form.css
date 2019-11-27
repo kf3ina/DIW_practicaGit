@@ -5,6 +5,10 @@ table{
 
 }
 
+tr{
+    height: 40px;
+}
+
 /*clean contact form*/
 tr td:first-child{
     text-align: right;
@@ -12,7 +16,7 @@ tr td:first-child{
     width: 150px;
 }
 
-tr td input[type="text"], tr td input[type="number"], tr td input[type="email"], td td textarea{
+tr td input[type="text"], tr td input[type="number"], tr td input[type="email"], tr td textarea{
     border: none;
     width: 300px;
     border-bottom: 1px solid #F20F79;
@@ -34,6 +38,23 @@ input[type="button"]{
     background-color: white;
     border: 1px solid #F20F79;
     border-bottom: 5px solid #F20F79;
+    transition: 1s ease;
+}
+input[type="button"]:hover{
+    background-color: rgb(255, 161, 205);
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+textarea{
+    resize: vertical;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
 address{
