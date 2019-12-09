@@ -23,7 +23,7 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/fonts.css">
-    <link rel="stylesheet" href="./assets/css/print.css" media="print">
+    <link rel="stylesheet" type="text/css" href="./assets/css/print.css" media="print">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
@@ -44,6 +44,8 @@
             botonAbrirAside.addEventListener("click", abrirNav);
             botonAbrirAside.addEventListener("mouseenter", animarFlechaAgrandar);
             botonAbrirAside.addEventListener("mouseleave", animarFlechaEncoger);
+
+            cargarReproductorVideo();
         }
     </script>
     <title>Blog | codeExMachina</title>
@@ -178,13 +180,13 @@
                     <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4">
                 </video>
                 <div class="controlesVideo pieFoto">
-                    <input type="button" value= &#x21BA;>
-                    <input type="button" value= &#x21E6>
-                    <input type="button" value= &#x25BA;>
-                    <input type="button" value= &#x21E8;>
-                    <input type="button" value= &#x1F507;>
-                    <input type="button" value= &#x1F509;>
-                    <input type="button" value= &#x1F50A;>
+                    <input type="button" id="botonReiniciar" value= &#x21BA;>
+                    <input type="button" id="botonAtras" value= &#x21E6>
+                    <input type="button" id="botonPlay" value= &#x25BA;>
+                    <input type="button" id="botonAdelante" value= &#x21E8;>
+                    <input type="button" id="botonSilenciar" value= &#x1F507;>
+                    <input type="button" id="botonBajarVolumen" value= &#x1F509;>
+                    <input type="button" id="botonSubirVolumen" value= &#x1F50A;>
                 </div>
             </article>
         </section>

@@ -278,6 +278,25 @@ section img,video{
   margin: 0 auto;
 }
 
+.controlesVideo{
+  display: flex;
+  justify-content: center;
+}
+
+.controlesVideo input[type="button"]{
+  width: 40px;
+  height: 40px;
+  margin: 2px;
+  background-color: #FFF;
+  border: 2px solid #04ADBF;
+  box-shadow: 0.5px 1px 1px gray;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+}
+.controlesVideo input[type="button"]:hover{
+  background-color: rgba(242, 15, 121, 0.171);
+}
+
 /****** footer ******/
 
 .whatsapp{
