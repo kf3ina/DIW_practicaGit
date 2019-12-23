@@ -31,23 +31,6 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="../js/script.js"></script>
-    <script>
-        var cero = 0;
-        $(document).ready(burgerMenu);
-
-        /*eventos click*/
-        window.addEventListener("load", cargarEventos);
-        function cargarEventos() {
-            var botonCerrarAside = document.getElementById("btnCerrar");
-            botonCerrarAside.addEventListener("click", cerrarNav);
-            var botonAbrirAside = document.getElementById("flechaAside");
-            botonAbrirAside.addEventListener("click", abrirNav);
-            botonAbrirAside.addEventListener("mouseenter", animarFlechaAgrandar);
-            botonAbrirAside.addEventListener("mouseleave", animarFlechaEncoger);
-
-            cargarReproductorVideo();
-        }
-    </script>
     <title>Blog | codeExMachina</title>
 </head>
 
@@ -180,13 +163,20 @@
                     <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4">
                 </video>
                 <div class="controlesVideo pieFoto">
-                    <input type="button" id="botonReiniciar" value= &#x21BA;>
-                    <input type="button" id="botonAtras" value= &#x21E6>
-                    <input type="button" id="botonPlay" value= &#x25BA;>
-                    <input type="button" id="botonAdelante" value= &#x21E8;>
-                    <input type="button" id="botonSilenciar" value= &#x1F507;>
-                    <input type="button" id="botonBajarVolumen" value= &#x1F509;>
-                    <input type="button" id="botonSubirVolumen" value= &#x1F50A;>
+                    <button id="botonReiniciar"><span class="fa fa-retweet"></span></button>
+                    <button id="botonAtras"><span class="fa fa-backward"></span></button>
+                    <button id="botonPlay"><span class="fa fa-play"></span></button>
+                    <button id="botonAdelante"><span class="fa fa-forward"></span></button>
+                    <button id="botonSilenciar"><span class="fa fa-volume-mute"></span></button>
+                    <button id="botonBajarVolumen"><span class="fa fa-volume-down"></span></button>
+                    <button id="botonSubirVolumen"><span class="fa fa-volume-up"></span></button>
+                </div>
+                <h3>Actividad 5.2 - Control de audio</h3>
+                <div class="botonesSonidosAnimales">
+                    <input type="button" id="btnSonidoElefante" class="btnSonidoAnimal" style="background-image: url('../images/elephant.png');">
+                    <input type="button" id="btnSonidoVaca" class="btnSonidoAnimal" style="background-image: url('../images/cow.jfif');">
+                    <input type="button" id="btnSonidoPerro" class="btnSonidoAnimal" style="background-image: url('../images/dog.png');">
+                    <input type="button" id="btnSonidoGallo" class="btnSonidoAnimal" style="background-image: url('../images/rooster.jfif');">
                 </div>
             </article>
         </section>

@@ -20,7 +20,7 @@ h1{
 
 h2{
   font-family: "League Spartan", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.75em;
   color: #F2913D;
 }
 
@@ -53,7 +53,7 @@ em{
 
 main a{
   text-decoration: none;
-  border-bottom: 1px #0597F2 solid;
+  border-bottom: 3px #0597F2 solid;
   padding-bottom: 1px;
   transition: color 0.5s step-start;
 }
@@ -265,7 +265,7 @@ section{
 }
 
 article{
-  padding: 20px 0;
+  padding: 50px 0;
   overflow: auto;
 }
 
@@ -283,7 +283,7 @@ section img,video{
   justify-content: center;
 }
 
-.controlesVideo input[type="button"]{
+.controlesVideo button{
   width: 40px;
   height: 40px;
   margin: 2px;
@@ -293,8 +293,20 @@ section img,video{
   cursor: pointer;
   transition: 0.5s ease-in;
 }
-.controlesVideo input[type="button"]:hover{
+.controlesVideo button:hover{
   background-color: rgba(242, 15, 121, 0.171);
+}
+
+.botonesSonidosAnimales{
+  display: flex;
+  justify-content: space-around;
+}
+
+.btnSonidoAnimal{
+  width: 130px;
+  height: 130px;
+  box-shadow: 0.5px 1px 1px gray;
+  cursor: pointer;
 }
 
 /****** footer ******/

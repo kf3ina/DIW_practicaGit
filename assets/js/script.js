@@ -1,3 +1,19 @@
+var cero = 0;
+$(document).ready(burgerMenu);
+
+/*eventos click*/
+window.addEventListener("load", cargarEventos);
+function cargarEventos() {
+    var botonCerrarAside = document.getElementById("btnCerrar");
+    botonCerrarAside.addEventListener("click", cerrarNav);
+    var botonAbrirAside = document.getElementById("flechaAside");
+    botonAbrirAside.addEventListener("click", abrirNav);
+    botonAbrirAside.addEventListener("mouseenter", animarFlechaAgrandar);
+    botonAbrirAside.addEventListener("mouseleave", animarFlechaEncoger);
+
+    cargarReproductorVideo();
+    cargarBotonesAudio();
+}
 
 function abrirNav() {
     document.getElementsByTagName("aside")[0].style.width = "250px";
@@ -5,13 +21,14 @@ function abrirNav() {
   }
   
 function cerrarNav() {
-    debugger;
     document.getElementsByTagName("aside")[0].style.width = "0";
     document.getElementById("flechaAside").style.width = "30px";
 }
+
 function animarFlechaAgrandar() {
     document.getElementById("flechaAside").style.width = "40px";
 }
+
 function animarFlechaEncoger() {
     document.getElementById("flechaAside").style.width = "30px";
 }
@@ -22,18 +39,17 @@ function burgerMenu() {
         $('header').toggleClass('ocultar', $(window).scrollTop() > cero);
         $('#flechaAside').toggleClass('ocultar', $(window).scrollTop() > cero);
         cero = $(window).scrollTop();
-    })
+    });
 
     $('.burgerMenu').click(function () {
         /*script para mostrar/ocultar el menú de navegación del burger menu*/
         $('nav').toggleClass('mostrar');
-    })
+    });
 }
 
 /*Funcionalidad para los botones del ejercicio 5.1*/
 
 function cargarReproductorVideo (){
-    debugger;
     reproductor = document.getElementById("videoTema6");
     reiniciar = document.getElementById("botonReiniciar");
     atras = document.getElementById("botonAtras");
@@ -46,7 +62,7 @@ function cargarReproductorVideo (){
     reiniciar.addEventListener('click', function(){
         reproductor.currentTime = 0;
         reproductor.play();
-        reproducir.value = "\u23F8";
+        reproducir.innerHTML = "<span class='fa fa-play'></span>";
     });
 
     atras.addEventListener('click', function(){
@@ -58,10 +74,10 @@ function cargarReproductorVideo (){
     reproducir.addEventListener('click', function(){
         if (reproductor.paused || reproductor.ended){
             reproductor.play();
-            reproducir.value = "\u23F8";
+            reproducir.innerHTML = "<span class='fa fa-pause'></span>";
         } else{
             reproductor.pause();
-            reproducir.value = "\u25BA";
+            reproducir.innerHTML = "<span class='fa fa-play'></span>";
         }
     });
 
@@ -74,10 +90,39 @@ function cargarReproductorVideo (){
     silenciar.addEventListener('click', function(){
         if (reproductor.muted){
             reproductor.muted = false;
-            silenciar.value = "\u0xF0";
+            bajarVolumen.disabled = false;
+            silenciar.innerHTML = "<span class='fa fa-volume-mute'></span>";
         } else {
             reproductor.muted = true;
-            silenciar.value = "\u1F507"
+            bajarVolumen.disabled = true;
+            silenciar.innerHTML = "<span class='fa fa-volume-off'></span>";
         }
+    });
+
+    bajarVolumen.addEventListener('click', function(){
+        if (reproductor.volume > 0.1) {
+            reproductor.volume -= 0.1;
+            subirVolumen.disabled = false;
+        } else {
+            bajarVolumen.disabled = true;
+        }
+    });
+
+    subirVolumen.addEventListener('click', function () {
+        if (reproductor.volume < 0.9) {
+            reproductor.volume += 0.1;
+            bajarVolumen.disabled = false;
+        } else {
+            subirVolumen.disabled = true;
+        }
+    });
+}
+
+function cargarBotonesAudio () {
+    let botones = document.querySelectorAll('.botonesSonidosAnimales input[type=button]');
+    botones[0].addEventListener('click', function () {
+        let archivoAudio = new Audio();
+        archivoAudio.src = "../images/elephant.wav";
+        archivoAudio.play();
     });
 }
