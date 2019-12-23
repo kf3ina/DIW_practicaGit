@@ -20,7 +20,6 @@ function abrirNav() {
   
   /*Cambiar el ancho del nav a  0 */
 function cerrarNav() {
-    debugger;
     document.getElementsByTagName("aside")[0].style.width = "0";
     document.getElementById("flechaAside").style.width = "30px";
 }
@@ -37,10 +36,10 @@ function burgerMenu() {
         $('header').toggleClass('ocultar', $(window).scrollTop() > cero);
         $('#flechaAside').toggleClass('ocultar', $(window).scrollTop() > cero);
         cero = $(window).scrollTop();
-    })
+    });
 
     $('.burgerMenu').click(function () {
         /*script para mostrar/ocultar el menú de navegación del burger menu*/
         $('nav').toggleClass('mostrar');
-    })
+    });
 }
