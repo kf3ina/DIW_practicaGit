@@ -13,6 +13,13 @@ function cargarEventos() {
 
     cargarReproductorVideo();
     cargarBotonesAudio();
+
+    // Script para UD6 Ejercicio 7.1
+
+    var dibujo = document.getElementsByTagName('canvas')[0];
+    var contexto = dibujo.getContext("2d");
+    // contexto.fillStyle = "rgb()";
+    contexto.fillRect(200, 50, 400, 300);
 }
 
 function abrirNav() {
@@ -125,4 +132,22 @@ function cargarBotonesAudio () {
         archivoAudio.src = "../images/elephant.wav";
         archivoAudio.play();
     });
+    botones[1].addEventListener('click', function () {
+        let archivoAudio = new Audio();
+        archivoAudio.src = "../images/duck.mp3";
+        archivoAudio.play();
+    });
+    botones[2].addEventListener('click', function () {
+        let archivoAudio = new Audio();
+        archivoAudio.src = "../images/dog.mp3";
+        archivoAudio.play();
+    });
+    botones[3].addEventListener('click', function () {
+        let archivoAudio = new Audio();
+        archivoAudio.src = "../images/rooster.mp3";
+        archivoAudio.play();
+    });
 }
+
+
+

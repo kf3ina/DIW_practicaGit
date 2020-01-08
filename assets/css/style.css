@@ -6,7 +6,8 @@
   font-size: 1em;
   font-weight: 400;
   line-height: 1.5em;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 h1{
@@ -55,6 +56,7 @@ main a{
   text-decoration: none;
   border-bottom: 3px #0597F2 solid;
   padding-bottom: 1px;
+  -webkit-transition: color 0.5s step-start;
   transition: color 0.5s step-start;
 }
 .sinBorde{
@@ -92,7 +94,9 @@ header{
   position: fixed;
   top: 0;
   width: 100%;
-  box-shadow: 20px 0 20px grey;
+  -webkit-box-shadow: 20px 0 20px grey;
+          box-shadow: 20px 0 20px grey;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -116,6 +120,35 @@ header{
   float: left;
 }
 
+#imgLogo{
+  -webkit-animation-name: animacionLogo;
+          animation-name: animacionLogo;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes animacionLogo{
+  from{
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to{
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes animacionLogo{
+  from{
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to{
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
 /****** nav menu ******/
 nav{
   width: 100%;
@@ -125,6 +158,8 @@ nav{
 
 nav ul{
   float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -165,6 +200,7 @@ aside{
   background-color: #04ADBF;
   overflow-x: hidden;
   padding-top: 100px;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -185,6 +221,7 @@ aside a{
   text-decoration: none;
   font-size: 1.25em;
   font-weight: bold;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -210,6 +247,7 @@ aside .botonCerrar {
   text-decoration: none;
   font-size: 2.25em;
   font-weight: bolder;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -238,10 +276,16 @@ main{
 }
 
 .carrusel{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin: 0 auto;
   padding: 30px 0px;
 }
@@ -269,6 +313,10 @@ article{
   overflow: auto;
 }
 
+.ejercicio{
+  margin: 0 0 50px 0;
+}
+
 article .centrado{
   text-align: center;
 }
@@ -279,8 +327,12 @@ section img,video{
 }
 
 .controlesVideo{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .controlesVideo button{
@@ -289,8 +341,10 @@ section img,video{
   margin: 2px;
   background-color: #FFF;
   border: 2px solid #04ADBF;
-  box-shadow: 0.5px 1px 1px gray;
+  -webkit-box-shadow: 0.5px 1px 1px gray;
+          box-shadow: 0.5px 1px 1px gray;
   cursor: pointer;
+  -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
 }
 .controlesVideo button:hover{
@@ -298,14 +352,18 @@ section img,video{
 }
 
 .botonesSonidosAnimales{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .btnSonidoAnimal{
   width: 130px;
   height: 130px;
-  box-shadow: 0.5px 1px 1px gray;
+  -webkit-box-shadow: 0.5px 1px 1px gray;
+          box-shadow: 0.5px 1px 1px gray;
   cursor: pointer;
 }
 
@@ -322,7 +380,8 @@ section img,video{
 	border-radius:40px;
 	text-align:center;
   font-size:1.875em;
-	box-shadow: 2px 2px 3px #999;
+	-webkit-box-shadow: 2px 2px 3px #999;
+	        box-shadow: 2px 2px 3px #999;
 }
 
 footer{
@@ -360,6 +419,7 @@ footer li a{
   color: white;
   height: 44px;
   width: 44px;
+  -webkit-transition: color 2s ease-in-out;
   transition: color 2s ease-in-out;
 }
 
@@ -423,10 +483,12 @@ a[href$=".pdf"]::after{
 }
 @media screen and (max-width: 1023px){
   header.ocultar{
-  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
   #flechaAside.ocultar{
-    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
 }
 @media screen and (max-width: 680px){
@@ -440,6 +502,7 @@ a[href$=".pdf"]::after{
     height: calc(100vh - 50px);
     background: #04ADBF;
     top: 50px;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
     text-align: center;
   }
