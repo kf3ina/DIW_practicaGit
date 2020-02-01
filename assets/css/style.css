@@ -368,6 +368,27 @@ section img,video{
   cursor: pointer;
 }
 
+.juego {
+  height: 400px;
+  width: 800px;
+  position: relative;
+}
+
+#btnJuego {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+ 
+  text-align: center;
+  color: #000;
+  background-color: #111;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 20px;
+  
+}
+
 /****** footer ******/
 
 .whatsapp{

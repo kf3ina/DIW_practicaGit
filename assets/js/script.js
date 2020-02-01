@@ -10,11 +10,11 @@ function cargarEventos() {
     botonAbrirAside.addEventListener("click", abrirNav);
     botonAbrirAside.addEventListener("mouseenter", animarFlechaAgrandar);
     botonAbrirAside.addEventListener("mouseleave", animarFlechaEncoger);
+    document.getElementById("btnJuego").addEventListener("click", cargarAnimacion)
 
     cargarReproductorVideo();
     cargarBotonesAudio();
     cargarCanvas();
-    cargarAnimacion();
 }
 
 function abrirNav() {
@@ -194,15 +194,20 @@ debugger;
 var lienzo = null, canvas = null;
 var x = 50, y = 50;
 var lastPress = null; //Variable para guardar la tecla presionada
+
 //En nuestro juego, usaremos las teclas izquierda, arriba, derecha y abajo, cuyos valores numéricos son 37, 38, 39 y 40 respectivamente.
 const KEY_LEFT = 37;
 const KEY_UP = 38;
 const KEY_RIGHT = 39;
 const KEY_DOWN = 40;
+const KEY_PAUSE = 80;
 
 function cargarAnimacion() {
+    debugger;
     canvas = document.getElementById('lienzo');
     lienzo = canvas.getContext('2d'); //obtenemos el contexto de dibujo
+    document.getElementById("btnJuego").style.display = "none";
+    lastPress = null;
     run();
 }
 function run() {
@@ -221,7 +226,11 @@ function accionesJuego() {
         x -= 5;
     if (lastPress == KEY_UP)
         y -= 5;
-        
+    if (lastPress == KEY_PAUSE) {
+        document.getElementById("btnJuego").style.display = "inline";
+        document.getElementById("btnJuego").innerHTML = "Reanudar"
+    }
+
     //verificaremos si el player ha salido del canvas, en cuyo caso, haremos que aparezca por el otro lado:
     if (x >= canvas.width)
         x = 0;
