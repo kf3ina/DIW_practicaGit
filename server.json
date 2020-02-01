@@ -1,0 +1,14 @@
+[
+{
+"origen": "Madrid",
+"destino": ["Barcelona", "Valencia", "Sevilla"]
+},
+{
+"origen": "Barcelona",
+"destino": ["Madrid", "Zaragoza"]
+},
+{
+"origen": "Alicante",
+"destino": ["Madrid", "Barcelona"]
+}
+]
