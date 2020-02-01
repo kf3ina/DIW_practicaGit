@@ -120,6 +120,7 @@ header{
   float: left;
 }
 
+/*animación para actividad UD6 6.1*/
 #imgLogo{
   -webkit-animation-name: animacionLogo;
           animation-name: animacionLogo;
