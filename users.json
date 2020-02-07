@@ -1,0 +1,12 @@
+[
+    {
+        "usuario": "admin@empresa.com",
+        "nombre": "Administrador",
+        "pass": "admin"
+    },
+    {
+        "usuario": "marisa@iesmarenostrum.com",
+        "nombre": "Marisa",
+        "pass": "marisa"
+    }
+]
