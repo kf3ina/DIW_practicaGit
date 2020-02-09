@@ -2,11 +2,11 @@
     {
         "usuario": "admin@empresa.com",
         "nombre": "Administrador",
-        "pass": "admin"
+        "pass": "admin&123"
     },
     {
         "usuario": "marisa@iesmarenostrum.com",
         "nombre": "Marisa",
-        "pass": "marisa"
+        "pass": "M4ri$a!"
     }
 ]
